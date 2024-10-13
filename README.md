@@ -1,4 +1,4 @@
-** TIPOS DE VEHICULOS **
+**TIPOS DE VEHICULOS**
 * PRODUCCION DE AUTOMOBILES Y MOTOS
  * 	situacion : una aplicacion para una fabrica que produce coches y motos.
  * cada tipo de vehiculo (coches y motos) tiene diferentes configuraciones, como el 
