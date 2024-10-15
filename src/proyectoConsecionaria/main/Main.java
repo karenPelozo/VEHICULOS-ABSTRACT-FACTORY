@@ -9,9 +9,9 @@ public class Main {
 	public static void main(String[] args) {
 	
 		AbstracFactory fabricaAutos = new AutosFactory();
-		MotorAutoimpl motorAuto =  (MotorAutoimpl) fabricaAutos.crearMotor();
-		RuedasAutoimpl ruedasAuto= (RuedasAutoimpl) fabricaAutos.crearRuedas();
-		CarroceriaAutoimpl carroceriaAuto = (CarroceriaAutoimpl) fabricaAutos.crearCarroceria();
+		Motor motorAuto =  fabricaAutos.crearMotor();
+		Ruedas ruedasAuto=  fabricaAutos.crearRuedas();
+		Carroceria carroceriaAuto = fabricaAutos.crearCarroceria();
 		System.out.println("-----AUTOS DATOS CONSECIONARIA---------");
 		//motorAuto.tamanioMotor();
 		System.out.print(motorAuto.tamanioMotor());
@@ -19,9 +19,9 @@ public class Main {
 		System.out.print(carroceriaAuto.colorCarroceria());
 		
 		AbstracFactory fabricaMotos = new MotoFactory();
-		MotorMotoimpl motorMoto =  (MotorMotoimpl) fabricaMotos.crearMotor();
-		RuedasMotoimpl ruedasMoto=   (RuedasMotoimpl) fabricaMotos.crearRuedas();
-		CarroceriaMotoimpl carroceriaMoto =   (CarroceriaMotoimpl) fabricaMotos.crearCarroceria();
+		Motor motorMoto = fabricaMotos.crearMotor();
+		Ruedas ruedasMoto=    fabricaMotos.crearRuedas();
+		Carroceria carroceriaMoto =   fabricaMotos.crearCarroceria();
 		System.out.println("\n------MOTOS DATOS CONSECIONARIA-----");
 		System.out.print(motorMoto.tamanioMotor());
 		System.out.print(ruedasMoto.cantidadRuedas());
